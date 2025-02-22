@@ -1,0 +1,83 @@
+body {
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4f8;
+  color: #333;
+  background-image: url(./images/background\ main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Başlıq və əsas məzmun */
+.content {
+  margin: 0 25%;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  color: rgb(28, 172, 164);
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  color: g;
+}
+
+/* Bölmə effekti üçün */
+.intro {
+  border-radius: 10px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 850px;
+  line-height: 2.5rem;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap: 3rem;
+}
+.rfo-btn {
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.7rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #fff;
+  border-radius: 45px;
+  width: 20rem;
+  height: 10rem;
+  background-color: green;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+}
+
+/* Responsive dizayn */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .content h1 {
+    font-size: 2em;
+  }
+}

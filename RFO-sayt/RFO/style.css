@@ -1,0 +1,195 @@
+/* General body and font styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #0062cc; /* Dark blue */
+  color: white;
+}
+
+.about-rfo {
+  background-color: rgb(117, 60, 60);
+  h2{
+    color: #fff;
+    width: 60%;
+    margin: 4rem 20%;
+    line-height: 2.5rem;
+  }
+}
+
+/* Section button styles */
+.toggle-btn {
+  width: 100%;
+  background-color: #009688; /* Teal */
+  color: white;
+  border: none;
+  padding: 15px;
+  text-align: left;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: #00796b; /* Darker teal */
+}
+
+/* Hidden list styles */
+.hidden {
+  display: none;
+  padding-left: 20px;
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+ol li {
+  font-size: 1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Section container styles */
+.aze,
+.tarix,
+.geo,
+.math,
+.physics,
+.chemstry,
+.bio {
+  background-color: white;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aze h1,
+.tarix h1,
+.geo h1,
+.math h1,
+.physics h1,
+.chemstry h1,
+.bio h1 {
+  font-size: 1.6rem;
+  color: #333;
+  margin: 0;
+  padding: 15px;
+  background-color: #3cb552; /* Yellow */
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+  background-color: #263238; /* Dark grey */
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+}
+
+.footer-text p {
+  margin: 0;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.social-links a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  header h2 {
+    font-size: 1.8rem;
+  }
+
+  .toggle-btn {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+
+  .footer-text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 1.5rem;
+  }
+
+  .toggle-btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .hidden {
+    padding-left: 10px;
+  }
+
+  ol li {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+
+  .footer-text p {
+    font-size: 0.8rem;
+  }
+
+  .social-links a {
+    font-size: 1.2rem;
+    margin: 0 5px;
+  }
+}
+
+/* Small screen responsiveness */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h2 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+
+  .toggle-btn {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .footer-text p {
+    font-size: 0.7rem;
+  }
+
+  .social-links a {
+    font-size: 1rem;
+  }
+}
